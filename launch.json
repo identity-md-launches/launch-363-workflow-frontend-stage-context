@@ -1,0 +1,28 @@
+{
+  "kind": "univ4_hook",
+  "hook": {
+    "contract": "SwapLotteryHook",
+    "constructorArgs": [
+      "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543"
+    ],
+    "permissions": [
+      "beforeSwap",
+      "afterSwap",
+      "beforeSwapReturnDelta",
+      "afterSwapReturnDelta"
+    ]
+  },
+  "token": {
+    "contract": "Ticket",
+    "name": "Ticket",
+    "symbol": "TIKT",
+    "decimals": 18
+  },
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "250178251749461638198017379368160"
+  },
+  "notes": "Sepolia test toy: TIKT and lottery pots have no value and promise no return. The pool orders native ETH as currency0 and Ticket as currency1. initialPrice is decimal sqrtPriceX96 at tick 161160, matching LaunchParams and the factory rehearsal with one-sided TIKT liquidity and the first buy into an ETH-less pool. SwapLotteryHook takes only the Sepolia PoolManager address; Ticket has no constructor arguments. The four declared permissions encode address bits 0x00cc; every other permission is false, and the hook constructor validates the bits. Lottery state is keyed by PoolId and UTC hour (timestamp / 3600). A 50 bps fee on the ETH leg uses specified beforeSwap or unspecified afterSwap return deltas, preserving the specified swap amount; partial fills revert and zero-rounded fees remain zero. Fees mint ERC-6909 ETH claims at the PoolManager. A swap with an ETH leg of at least 0.001 ETH earns one ticket when hookData is exactly a valid ABI-encoded nonzero address. This identity is unauthenticated; invalid or absent identity earns no ticket. Anyone can seal an ended round once, targeting the next block, then draw at targetBlock + 1 through targetBlock + 256 inclusive. The winner index hashes the target blockhash, pool ID and round modulo ticket count. Empty or expired rounds roll their pot into the current round once. Winners pull winnings through claim(), which clears their balance before unlockCallback burns claims and takes ETH. Non-native-ETH pools receive zero swap deltas and no lottery effects. Callbacks require the PoolManager. Future blockhash randomness can be biased by a proposer; no VRF, oracle or keeper is used. ABI documentation is in docs/abi/SwapLotteryHook.json and docs/abi/Ticket.json. This manifest describes the implementation; launch policy and signed artifact linkage are handled separately by services."
+}
