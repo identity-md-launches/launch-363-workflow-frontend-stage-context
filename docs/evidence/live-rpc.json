@@ -1,0 +1,137 @@
+{
+  "checkedAt": "2026-09-27T06:39:55.125Z",
+  "chainId": 11155111,
+  "sourceCommit": "6804778c746e11f610433bf194aec95f947d00ad",
+  "broadcastTransactions": false,
+  "endpoints": [
+    {
+      "url": "https://ethereum-sepolia-rpc.publicnode.com",
+      "chainCodeAndManagers": "passed",
+      "snapshot": {
+        "round": "497358",
+        "current": {
+          "status": 0,
+          "pot": "0",
+          "ticketCount": "0",
+          "targetBlock": "0",
+          "winner": "0x0000000000000000000000000000000000000000",
+          "rolledInto": "0"
+        },
+        "selectedId": "497357",
+        "selected": {
+          "status": 0,
+          "pot": "0",
+          "ticketCount": "0",
+          "targetBlock": "0",
+          "winner": "0x0000000000000000000000000000000000000000",
+          "rolledInto": "0"
+        },
+        "block": "11791595",
+        "timestamp": "1790491188",
+        "sqrtPrice": "560227709747861399187319382274582",
+        "decimals": 18,
+        "symbol": "TIKT",
+        "owned": "0",
+        "winnings": "0",
+        "tokenBalance": "0",
+        "ethBalance": "0",
+        "allowance": "0",
+        "fetchedAt": 1790491195451,
+        "feeBps": "50",
+        "threshold": "1000000000000000",
+        "duration": "3600"
+      },
+      "poolId": "0x3a145b01516eaa9d470f40764ae7b69788bd36ccd6056bc54a5b9bc9a76b0baa",
+      "readOnlyBuyQuote": [
+        "49378965042544213025385",
+        "238595"
+      ]
+    },
+    {
+      "url": "https://rpc.sepolia.ethpandaops.io",
+      "chainCodeAndManagers": "passed",
+      "snapshot": {
+        "round": "497358",
+        "current": {
+          "status": 0,
+          "pot": "0",
+          "ticketCount": "0",
+          "targetBlock": "0",
+          "winner": "0x0000000000000000000000000000000000000000",
+          "rolledInto": "0"
+        },
+        "selectedId": "497357",
+        "selected": {
+          "status": 0,
+          "pot": "0",
+          "ticketCount": "0",
+          "targetBlock": "0",
+          "winner": "0x0000000000000000000000000000000000000000",
+          "rolledInto": "0"
+        },
+        "block": "11791595",
+        "timestamp": "1790491188",
+        "sqrtPrice": "560227709747861399187319382274582",
+        "decimals": 18,
+        "symbol": "TIKT",
+        "owned": "0",
+        "winnings": "0",
+        "tokenBalance": "0",
+        "ethBalance": "0",
+        "allowance": "0",
+        "fetchedAt": 1790491195782,
+        "feeBps": "50",
+        "threshold": "1000000000000000",
+        "duration": "3600"
+      },
+      "poolId": "0x3a145b01516eaa9d470f40764ae7b69788bd36ccd6056bc54a5b9bc9a76b0baa",
+      "readOnlyBuyQuote": [
+        "49378965042544213025385",
+        "238595"
+      ]
+    },
+    {
+      "url": "https://sepolia.rpc.sentio.xyz",
+      "chainCodeAndManagers": "passed",
+      "snapshot": {
+        "round": "497358",
+        "current": {
+          "status": 0,
+          "pot": "0",
+          "ticketCount": "0",
+          "targetBlock": "0",
+          "winner": "0x0000000000000000000000000000000000000000",
+          "rolledInto": "0"
+        },
+        "selectedId": "497357",
+        "selected": {
+          "status": 0,
+          "pot": "0",
+          "ticketCount": "0",
+          "targetBlock": "0",
+          "winner": "0x0000000000000000000000000000000000000000",
+          "rolledInto": "0"
+        },
+        "block": "11791595",
+        "timestamp": "1790491188",
+        "sqrtPrice": "560227709747861399187319382274582",
+        "decimals": 18,
+        "symbol": "TIKT",
+        "owned": "0",
+        "winnings": "0",
+        "tokenBalance": "0",
+        "ethBalance": "0",
+        "allowance": "0",
+        "fetchedAt": 1790491196845,
+        "feeBps": "50",
+        "threshold": "1000000000000000",
+        "duration": "3600"
+      },
+      "poolId": "0x3a145b01516eaa9d470f40764ae7b69788bd36ccd6056bc54a5b9bc9a76b0baa",
+      "readOnlyBuyQuote": [
+        "49378965042544213025385",
+        "238595"
+      ]
+    }
+  ]
+}

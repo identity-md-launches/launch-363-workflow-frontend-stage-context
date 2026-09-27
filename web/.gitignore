@@ -1,0 +1,10 @@
+# Explicit ignore-path budget: web/.gitignore only.
+# These names match at every nesting level under web/.
+node_modules/
+.cache/
+.npm/
+.vite/
+playwright-report/
+test-results/
+generated/
+*.tsbuildinfo

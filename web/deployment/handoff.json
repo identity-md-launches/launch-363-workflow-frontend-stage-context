@@ -1,0 +1,55 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-265-swaplotteryhook",
+  "version": 1,
+  "launchId": "537a433a-fab7-4103-9860-90d08308560c",
+  "manifest": {
+    "hook": {
+      "contract": "SwapLotteryHook",
+      "permissions": [
+        "beforeSwap",
+        "afterSwap",
+        "beforeSwapReturnDelta",
+        "afterSwapReturnDelta"
+      ],
+      "constructorArgs": [
+        "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543"
+      ]
+    },
+    "kind": "univ4_hook",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "250178251749461638198017379368160",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Sepolia test toy: TIKT and lottery pots have no value and promise no return. The pool orders native ETH as currency0 and Ticket as currency1. initialPrice is decimal sqrtPriceX96 at tick 161160, matching LaunchParams and the factory rehearsal with one-sided TIKT liquidity and the first buy into an ETH-less pool. SwapLotteryHook takes only the Sepolia PoolManager address; Ticket has no constructor arguments. The four declared permissions encode address bits 0x00cc; every other permission is false, and the hook constructor validates the bits. Lottery state is keyed by PoolId and UTC hour (timestamp / 3600). A 50 bps fee on the ETH leg uses specified beforeSwap or unspecified afterSwap return deltas, preserving the specified swap amount; partial fills revert and zero-rounded fees remain zero. Fees mint ERC-6909 ETH claims at the PoolManager. A swap with an ETH leg of at least 0.001 ETH earns one ticket when hookData is exactly a valid ABI-encoded nonzero address. This identity is unauthenticated; invalid or absent identity earns no ticket. Anyone can seal an ended round once, targeting the next block, then draw at targetBlock + 1 through targetBlock + 256 inclusive. The winner index hashes the target blockhash, pool ID and round modulo ticket count. Empty or expired rounds roll their pot into the current round once. Winners pull winnings through claim(), which clears their balance before unlockCallback burns claims and takes ETH. Non-native-ETH pools receive zero swap deltas and no lottery effects. Callbacks require the PoolManager. Future blockhash randomness can be biased by a proposer; no VRF, oracle or keeper is used. ABI documentation is in docs/abi/SwapLotteryHook.json and docs/abi/Ticket.json. This manifest describes the implementation; launch policy and signed artifact linkage are handled separately by services.",
+    "token": {
+      "name": "Ticket",
+      "symbol": "TIKT",
+      "contract": "Ticket",
+      "decimals": 18
+    }
+  },
+  "contracts": [
+    {
+      "name": "Ticket",
+      "txHash": "0x87e3cbd6142724d42884a1ef27244745e274781b14c2b424ea9fb947d6716d4a",
+      "abiHash": "f36d2fe28b62f817a4fba0b78bb501b41895eada3982280273c063ad8183f577",
+      "address": "0x2697a540c5c65fb4b028a370560ef0b31ccdd7fe",
+      "blockNumber": 11791413,
+      "creationCodeHash": "1b809566bf5f301861b1e21fef47ed7a4ad7a10bc6eaf55ec7511fb3d05d67c3"
+    },
+    {
+      "name": "SwapLotteryHook",
+      "txHash": "0x87e3cbd6142724d42884a1ef27244745e274781b14c2b424ea9fb947d6716d4a",
+      "abiHash": "e5ad344e00507aa451f64dea83ae92104d436dae9e0fe4c07b511feef66ad459",
+      "address": "0x416429229c5f78797a8e205365c8b60b092a40cc",
+      "blockNumber": 11791413,
+      "creationCodeHash": "42c2e0337f2460c8a80a63a82dca1627bcf4cc10924354be002ab5c40aa9a14f"
+    }
+  ],
+  "sourceCommit": "6804778c746e11f610433bf194aec95f947d00ad",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "9a0c5f77fdcfb46085247813110ffb29212eed09f9e9a9b9e47fea183c3de67a"
+}

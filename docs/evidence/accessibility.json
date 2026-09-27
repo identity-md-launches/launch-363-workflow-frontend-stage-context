@@ -1,0 +1,69 @@
+{
+  "views": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "violations": []
+    }
+  ],
+  "keyboard": {
+    "tag": "BUTTON",
+    "text": "Buy TIKT",
+    "outline": "3px"
+  },
+  "contrasts": [
+    {
+      "selector": ".pot-caption",
+      "foreground": "rgb(35, 39, 31)",
+      "background": "rgb(228, 242, 152)",
+      "ratio": 12.633784963087836
+    },
+    {
+      "selector": ".intro-note p",
+      "foreground": "rgb(35, 39, 31)",
+      "background": "rgb(245, 243, 236)",
+      "ratio": 13.691297838090952
+    },
+    {
+      "selector": ".router-note",
+      "foreground": "rgb(98, 100, 89)",
+      "background": "rgb(252, 251, 247)",
+      "ratio": 5.817093115098097
+    },
+    {
+      "selector": ".claim-panel p",
+      "foreground": "rgb(98, 100, 89)",
+      "background": "rgb(235, 232, 222)",
+      "ratio": 4.913259175845852
+    },
+    {
+      "selector": ".how-grid p",
+      "foreground": "rgb(98, 100, 89)",
+      "background": "rgb(245, 243, 236)",
+      "ratio": 5.424980518619443
+    },
+    {
+      "selector": ".button.primary",
+      "foreground": "rgb(35, 39, 31)",
+      "background": "rgb(228, 242, 152)",
+      "ratio": 12.633784963087836
+    }
+  ],
+  "reducedMotion": "No button transitions",
+  "textEnlargement": "200% root font size; no overflow at 1440px; not native browser zoom"
+}

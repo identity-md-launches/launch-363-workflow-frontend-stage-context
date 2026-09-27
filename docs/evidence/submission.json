@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-09-27",
+  "protectedTrackedFilesUnchanged": true,
+  "unexpectedPaths": [],
+  "submodules": 0,
+  "dependencyOrCacheFiles": 0,
+  "allowedChangeCount": 43,
+  "exportAssetCount": 6,
+  "exportAssetBytes": 599949,
+  "exportTotalBytes": 603200,
+  "manifestSHA256": "8873e1da986866524e617ceab7b1f308a6fd9c80c4f4b5a5e708c9b1eb792baa",
+  "allAssetHashesMatch": true,
+  "handoffAndNetworkMatch": true,
+  "gitCommitCreated": false,
+  "gitCommitBlocker": ".git/index.lock creation failed: Read-only file system",
+  "existingFullGitBundleBytes": 251384,
+  "budgetBytes": 8388608,
+  "bundleBudgetMethod": "All allowed source/export/documentation bytes uncompressed plus existing complete Git bundle plus 1 MiB packing/header allowance. Exact final commit bundle unavailable because repository metadata is read-only.",
+  "allowedTreeBytes": 3340123,
+  "conservativeBundleBudgetBytes": 4640083,
+  "budgetHeadroomBytes": 3748525
+}

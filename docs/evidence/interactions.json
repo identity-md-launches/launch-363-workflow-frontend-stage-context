@@ -1,0 +1,83 @@
+{
+  "checkedAt": "2026-09-27T07:02:14.311Z",
+  "exportBase": "/preview/",
+  "mockedWalletAndRpc": true,
+  "realTransactionsSent": 0,
+  "results": [
+    {
+      "name": "subpath assets, disconnected reads and action prerequisites",
+      "result": "passed"
+    },
+    {
+      "name": "wallet rejection is recoverable",
+      "result": "passed"
+    },
+    {
+      "name": "wrong chain offers exact add-chain fallback and switches again",
+      "result": "passed"
+    },
+    {
+      "name": "strict form validation and quotes use the configured quoter",
+      "result": "passed"
+    },
+    {
+      "name": "simulation revert prevents a wallet transaction",
+      "result": "passed"
+    },
+    {
+      "name": "exact-input buy encodes account and native value through PoolSwapTest",
+      "result": "passed"
+    },
+    {
+      "name": "sell has an explicit exact-amount approval followed by a fresh quote and sell",
+      "result": "passed"
+    },
+    {
+      "name": "seal, target block wait, draw and claim complete through the real page controls",
+      "result": "passed"
+    },
+    {
+      "name": "expired round exposes rollover and historical round selector works",
+      "result": "passed"
+    },
+    {
+      "name": "account changes invalidate quotes and read the new wallet",
+      "result": "passed"
+    },
+    {
+      "name": "missing code blocks actions and recovery re-enables them",
+      "result": "passed"
+    },
+    {
+      "name": "quote failure displays a recoverable error",
+      "result": "passed"
+    },
+    {
+      "name": "wallet rejection, expired quote and disconnect cannot submit a swap",
+      "result": "passed"
+    },
+    {
+      "name": "RPC failure pauses actions and Refresh recovers",
+      "result": "passed"
+    },
+    {
+      "name": "responsive screenshots, keyboard focus, axe and contrast at representative widths",
+      "result": "passed"
+    },
+    {
+      "name": "no unexpected static resource or browser console failures",
+      "result": "passed"
+    }
+  ],
+  "transactionFunctions": [
+    "swap",
+    "approve",
+    "swap",
+    "seal",
+    "draw",
+    "claim",
+    "draw"
+  ],
+  "consoleErrors": [],
+  "resourceErrors": []
+}
